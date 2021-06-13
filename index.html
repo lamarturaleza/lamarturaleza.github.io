@@ -12,6 +12,10 @@
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Style -->
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -21,7 +25,7 @@
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-target="slide-out" class="sidenav-trigger left hide-on-med-and-up"><i
+                <a href="#" data-target="slide-out" class="sidenav-trigger left hide-on-large-only"><i
                         class="material-icons">menu</i></a>
                 <a href="#" class="brand-logo dancing-font">marturaleza</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -38,7 +42,7 @@
                     </div>
                     <a href="#user"><img class="circle" src="shared/images/marta.jpeg"></a>
                     <a href="#name"><span class="white-text name">Marta Sanz buezo</span></a>
-                    <a href="#email"><span class="white-text email">marturaleza@gmail.com</span></a>
+                    <a href="#email"><span class="white-text email">no-valid@email.com</span></a>
                 </div>
             </li>
             <li><a href="#quien-soy"><i class="material-icons">face</i>¿Quién soy?</a></li>
@@ -47,7 +51,8 @@
                 <div class="divider"></div>
             </li>
             <li><a class="subheader">Minor options...</a></li>
-            <li><a class="waves-effect" href="http://linkedin.com/in/martasanzbuezo/">LinkedIn</a></li>
+            <li><a class="waves-effect" href="http://linkedin.com/in/martasanzbuezo/"><i
+                        class="fab fa-linkedin"></i>LinkedIn</a></li>
             <li><a class="waves-effect" href="#location"><i class="material-icons">location_on</i> Dónde</a></li>
         </ul>
     </header>
@@ -80,9 +85,10 @@
             <div id="visual-thinking" class="row container">
                 <h2 class="header">Visual Thinking</h2>
                 <p class="grey-text text-darken-3 lighten-3">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quo autem esse fugit aliquid
-                    saepe voluptatibus dolorum non molestiae odit laudantium a vitae, eius, dignissimos repellat, id
-                    officiis impedit maxime!
+                    El pensamiento visual es una herramienta que consiste en volcar y manipular ideas a través de
+                    dibujos simples y fácilmente reconocibles, creando conexiones entre si por medio de mapas mentales,
+                    con el objetivo de entenderlas mejor, definir objetivos, identificar problemas, descubrir
+                    soluciones, simular procesos y generar nuevas ideas.
                 </p>
                 <div class="carousel">
                     <a class="carousel-item modal-trigger" href="#modal-img" onclick="onClickHandler(event)">
@@ -108,26 +114,48 @@
     <footer class="page-footer">
         <div class="container">
             <div class="row">
-                <div class="col l6 s12">
+                <div class="col l4 s12">
                     <h5 class="white-text">Sobre la empresa</h5>
                     <p class="grey-text text-lighten-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat architecto adipisci, fugit
-                        officiis, saepe dolorem animi aliquam et autem assumenda vel voluptas quia, ducimus consequatur
-                        mollitia dolores nostrum numquam doloremque?
+                        En expansión...
                     </p>
                 </div>
-                <div id="location" class="col l4 offset-l2 s12">
+                <div id="location" class="col l4 s12">
                     <h5 class="white-text">Dónde encontrarme</h5>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47182.753656704954!2d-3.7297124799118127!3d42.344184111376016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd45fcbe3dc20327%3A0xa1f5beab8e71aa1!2sBurgos!5e0!3m2!1ses!2ses!4v1623192762808!5m2!1ses!2ses"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div id="address" class="col l4 s12 valign-wrapper">
+                    <address>
+                        <ul>
+                            <li>
+                                <i class="fas fa-female"></i> <a href="mailto:no_address@noexist.com">Marta Sanz Buezo</a>
+                            </li>
+                            <br />
+                            <li>
+                                <i class="fas fa-home"></i> Sin calle, 09XXX Burgos. Spain
+                            </li>
+                            <br />
+                            <li>
+                                <i class="fas fa-phone"></i> +34 XXX XXX XXX XXX
+                            </li>
+                            <br />
+                            <li>
+                                <i class="fas fa-at"></i> no_valid@in_construction.com
+                            </li>
+                        </ul>
+                    </address>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2021 Copyright
-                <a class="grey-text text-lighten-4 right" href="http://linkedin.com/in/martasanzbuezo/">LinkedIn</a>
+                <i class="far fa-copyright"></i> 2021 Copyright
+                <a class="grey-text text-lighten-4 right" href="http://linkedin.com/in/martasanzbuezo/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </footer>
